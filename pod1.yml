@@ -11,4 +11,4 @@ spec:
   - name: python-app1
     image: cloudsiksha/pythonapp:v1
     ports:
-    - containerPort: 8080
+    - containerPort: 80
