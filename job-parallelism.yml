@@ -3,7 +3,7 @@ kind: Job
 metadata:
   name: parallel
   labels:
-  chapter: jobs
+    chapter: jobs
 spec:
   parallelism: 2
   completions: 6
@@ -16,4 +16,4 @@ spec:
       - name: kuard
         image: cloudsiksha/pythonapp:v1
         imagePullPolicy: Always
-        restartPolicy: OnFailure
+      restartPolicy: OnFailure
