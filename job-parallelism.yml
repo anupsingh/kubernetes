@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parallel
+  labels:
+  chapter: jobs
+spec:
+  parallelism: 2
+  completions: 6
+  template:
+    metadata:
+      labels:
+      chapter: jobs
+    spec:
+      containers:
+      - name: kuard
+        image: cloudsiksha/pythonapp:v1
+        imagePullPolicy: Always
+        restartPolicy: OnFailure
