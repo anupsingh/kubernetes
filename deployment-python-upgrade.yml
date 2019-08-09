@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-python
+  name: deploy-python
 spec:
   replicas: 10
   selector:
